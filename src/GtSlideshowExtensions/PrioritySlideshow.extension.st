@@ -233,11 +233,6 @@ PrioritySlideshow class >> gtSpotterActDefaultFrom: aSpotterElement [
 ]
 
 { #category : #'*GtSlideshowExtensions' }
-PrioritySlideshow >> priorityFor: aSlideMethodSelector [
-	^ self slidePriorities indexOf: aSlideMethodSelector ifAbsent: [ 0 ]
-]
-
-{ #category : #'*GtSlideshowExtensions' }
 PrioritySlideshow class >> recompileMethod: guiOrder [
 	| method |
 	method := self >> #slidePriorities.
